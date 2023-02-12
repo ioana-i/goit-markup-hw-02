@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Main</title>
   </head>
 
@@ -11,55 +18,65 @@
     <!-- Page header -->
     <header>
       <!-- Navigation bar -->
-      <nav>
-        <a href="studio.html"><span>Web</span>Studio</a>
-        <ul>
-          <li><a href="studio.html"></a><span>Studio</span></li>
-          <li><a href="portfolio.html"></a>Portfolio</li>
-          <li><a href="contacts.html"></a>Contacts</li>
+      <nav class="nav-section unstyled-list">
+        <a class="logo top-logo link" href="/index.html">Studio</a>
+        <ul class="left-nav unstyled-list">
+          <li>
+            <a class="link" href="/index.html">Studio</a>
+          </li>
+          <li>
+            <a class="studio-portfolio link" href="/portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li><a class="link" href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+12127724159">+1 212-771-4150</a></li>
+      <ul class="right-nav unstyled-list link">
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a class="link" href="tel:+12127724159">+1 212-771-4150</a></li>
       </ul>
     </header>
 
     <!-- Unique page content -->
     <main>
       <!-- Hero section -->
-      <section>
-        <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button">Request our service</button>
+      <section class="hero-section">
+        <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+        <button class="hero-button" type="button">Request our service</button>
       </section>
 
       <!-- Our values section -->
       <section>
-        <ul>
+        <ul class="unstyled-list">
           <li>
-            <h3>ATTENTION TO DETAILS</h3>
-            <p>
+            <h2 class="values-title">ATTENTION TO DETAILS</h2>
+            <p class="values-text">
               We go into all the details and processes of your business to
               develop a customized solution.
             </p>
           </li>
           <li>
-            <h3>PUNCTUALITY</h3>
-            <p>
+            <h2 class="values-title">PUNCTUALITY</h2>
+            <p class="values-text">
               With us, you can feel safe and secure. An important principle of
               the company: respect your time and deadlines.
             </p>
           </li>
           <li>
-            <h3>PLANNING</h3>
-            <p>
+            <h2 class="values-title">PLANNING</h2>
+            <p class="values-text">
               You will be able to observe and participate in every phase of
               solution development and implementation.
             </p>
           </li>
           <li>
-            <h3>MODERN TECHNOLOGIES</h3>
-            <p>
+            <h2 class="values-title">MODERN TECHNOLOGIES</h2>
+            <p class="values-text">
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
             </p>
@@ -69,8 +86,8 @@
 
       <!-- What we do section -->
       <section>
-        <h2>What we do</h2>
-        <ul>
+        <h2 class="section-title">What we do</h2>
+        <ul class="unstyled-list">
           <li>
             <img
               height="200"
@@ -99,9 +116,9 @@
       </section>
 
       <!-- Our Team section -->
-      <section>
-        <h2>Our Team</h2>
-        <ul>
+      <section class="team-section">
+        <h2 class="section-title">Our Team</h2>
+        <ul class="unstyled-list">
           <li>
             <img
               height="180"
@@ -109,8 +126,8 @@
               src="images/person1.jpg"
               alt="Christopher Walker"
             />
-            <h4>Christopher Walker</h4>
-            <p>Product Designer</p>
+            <h3 class="team-name">Christopher Walker</h3>
+            <p class="team-job-title">Product Designer</p>
           </li>
           <li>
             <img
@@ -119,8 +136,8 @@
               src="images/person2.jpg"
               alt="Kylie Evans"
             />
-            <h4>Kylie Evans</h4>
-            <p>Frontend Developer</p>
+            <h3 class="team-name">Kylie Evans</h3>
+            <p class="team-job-title">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -129,8 +146,8 @@
               src="images/person3.jpg"
               alt="Ryan Harris"
             />
-            <h4>Ryan Harris</h4>
-            <p>Marketing</p>
+            <h3 class="team-name">Ryan Harris</h3>
+            <p class="team-job-title">Marketing</p>
           </li>
           <li>
             <img
@@ -139,20 +156,28 @@
               src="images/person4.jpg"
               alt="Tyler Moore"
             />
-            <h4>Tyler Moore</h4>
-            <p>UI Designer</p>
+            <h3 class="team-name">Tyler Moore</h3>
+            <p class="team-job-title">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
 
     <!-- Page footer -->
-    <footer>
-      <a href="studio.html"><span>Web</span>Studio</a>
-      <ul>
-        <li><address>695 Park Ave, NY 10065, USA</address></li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+12127724159">+1 212-771-4150</a></li>
+    <footer class="footer">
+      <a class="bottom-logo link" href="studio.html">Studio</a>
+      <ul class="unstyled-list">
+        <li class="footer-address">
+          <address>695 Park Ave, NY 10065, USA</address>
+        </li>
+        <li>
+          <a class="footer-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="footer-link" href="tel:+12127724159">+1 212-771-4150</a>
+        </li>
       </ul>
     </footer>
   </body>

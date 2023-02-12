@@ -1,0 +1,222 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  --maintextcolor: #212121;
+  --hovercolor: #2196f3;
+  --secondarytextcolor: #757575;
+  --indexhero-background-color: #2f303a;
+  --whitetextcolor: #fff;
+  --blacktextcolor: #000;
+  --portofoliobuttonsbackgroundcolor: #f5f4fa;
+}
+
+footer {
+  --background-color: #2f303a;
+  --footerlinkcolor: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+  background-color: var(--background-color);
+}
+
+.unstyled-list {
+  list-style: none;
+}
+
+.link {
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* Nav bar */
+.nav-section {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.left-nav li a {
+  color: var(--maintextcolor);
+}
+
+.right-nav li a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondarytextcolor);
+}
+
+.left-nav li a:hover,
+.left-nav li a[tabindex]:focus {
+  color: var(--hovercolor);
+}
+
+.right-nav li a:hover,
+.right-nav li a:focus {
+  color: var(--hovercolor);
+}
+
+/* Index | Studio page */
+
+/* Hero section of Studio page */
+.hero-section {
+  background: var(--indexhero-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--whitetextcolor);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--whitetextcolor);
+  border-radius: 4px;
+  border: none;
+  background-color: var(--hovercolor);
+}
+
+.values-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.values-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondarytextcolor);
+}
+
+/* What we do section */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Team section */
+
+.team-section {
+  background: var(--whitetextcolor);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-job-title {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondarytextcolor);
+}
+
+/* Portfolio page */
+
+/* Portfolio buttons */
+.portfolio-top-buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button {
+  background: var(--portofoliobuttonsbackgroundcolor);
+  border-radius: 4px;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--hovercolor);
+  color: var(--whitetextcolor);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+/* Project cards */
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--maintextcolor);
+}
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--secondarytextcolor);
+}
+
+/* Footer */
+address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--whitetextcolor);
+  font-style: normal;
+}
+
+.footer-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--footerlinkcolor);
+  text-decoration: none;
+}
+
+/* Logos */
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.top-logo {
+  color: var(--blacktextcolor);
+}
+
+.top-logo::before {
+  content: "Web";
+  color: var(--hovercolor);
+}
+
+.bottom-logo {
+  color: var(--whitetextcolor);
+}
+
+.bottom-logo::before {
+  content: "Web";
+  color: var(--hovercolor);
+}
