@@ -1,3 +1,5 @@
+/* Elements common to all pages */
+
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -36,11 +38,11 @@ footer {
   letter-spacing: 0.02em;
 }
 
-.left-nav li a {
+.nav-pages {
   color: var(--maintextcolor);
 }
 
-.right-nav li a {
+.nav-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -48,14 +50,49 @@ footer {
   color: var(--secondarytextcolor);
 }
 
-.left-nav li a:hover,
-.left-nav li a[tabindex]:focus {
+.nav-pages:hover,
+.nav-pages:focus,
+.footer-link:hover,
+.footer-link:focus,
+.nav-contacts:hover,
+.nav-contacts:focus {
   color: var(--hovercolor);
 }
 
-.right-nav li a:hover,
-.right-nav li a:focus {
+/* Logos */
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.top-logo {
+  color: var(--blacktextcolor);
+}
+
+.top-logo::before {
+  content: "Web";
   color: var(--hovercolor);
+}
+
+.bottom-logo {
+  color: var(--whitetextcolor);
+}
+
+.bottom-logo::before {
+  content: "Web";
+  color: var(--hovercolor);
+}
+
+/* Common images styles */
+
+.what-we-do-image,
+.portfolio-image {
+  width: 370px;
+  height: 294px;
 }
 
 /* Index | Studio page */
@@ -114,6 +151,11 @@ footer {
 
 .team-section {
   background: var(--whitetextcolor);
+}
+
+.team-member-pic {
+  width: 270px;
+  height: 260px;
 }
 
 .team-name {
@@ -191,32 +233,4 @@ address {
   letter-spacing: 0.03em;
   color: var(--footerlinkcolor);
   text-decoration: none;
-}
-
-/* Logos */
-.logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.top-logo {
-  color: var(--blacktextcolor);
-}
-
-.top-logo::before {
-  content: "Web";
-  color: var(--hovercolor);
-}
-
-.bottom-logo {
-  color: var(--whitetextcolor);
-}
-
-.bottom-logo::before {
-  content: "Web";
-  color: var(--hovercolor);
 }
