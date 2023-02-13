@@ -1,8 +1,6 @@
 /* Elements common to all pages */
 
 body {
-  font-family: "Roboto";
-  font-style: normal;
   --maintextcolor: #212121;
   --hovercolor: #2196f3;
   --secondarytextcolor: #757575;
@@ -10,15 +8,17 @@ body {
   --whitetextcolor: #fff;
   --blacktextcolor: #000;
   --portofoliobuttonsbackgroundcolor: #f5f4fa;
-}
-
-footer {
-  --background-color: #2f303a;
-  --footerlinkcolor: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
+  font-style: normal;
 }
 
 .footer {
-  background-color: var(--background-color);
+  --background-color: #2f303a;
+  --footerlinkcolor: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 .unstyled-list {
@@ -88,7 +88,6 @@ footer {
 }
 
 /* Common images styles */
-
 .what-we-do-image,
 .portfolio-image {
   width: 370px;
@@ -148,7 +147,6 @@ footer {
 }
 
 /* Team section */
-
 .team-section {
   background: var(--whitetextcolor);
 }
@@ -217,20 +215,16 @@ footer {
 }
 
 /* Footer */
-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+.footer {
+  background-color: var(--background-color);
+}
+
+.footer-address {
   color: var(--whitetextcolor);
   font-style: normal;
 }
 
 .footer-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
   color: var(--footerlinkcolor);
   text-decoration: none;
 }
